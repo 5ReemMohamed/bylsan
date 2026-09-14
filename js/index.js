@@ -230,35 +230,67 @@ faqItems.forEach(function (item) {
   });
 });
 
-const contactForm = document.querySelector(".bailsan-contact-form");
+const contactForm = document.getElementById("bailsanContactForm");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    const submitButton = contactForm.querySelector(
-      ".bailsan-contact-submit"
-    );
+        const submitButton = contactForm.querySelector(
+            ".bailsan-contact-submit"
+        );
 
-    if (!submitButton) return;
+        if (!submitButton) return;
 
-    const originalContent = submitButton.innerHTML;
+        const originalContent = submitButton.innerHTML;
 
-    submitButton.innerHTML =
-      '<span>تم إرسال طلبك بنجاح</span><i class="fa-solid fa-check"></i>';
+        submitButton.disabled = true;
+        submitButton.innerHTML =
+            '<span>جاري الإرسال...</span><i class="fa-solid fa-spinner fa-spin mx-2"></i>';
 
-    submitButton.style.background = "var(--gold)";
-    submitButton.style.color = "var(--purple-dark)";
+        emailjs
+            .sendForm(
+                "service_bvj3nsi",
+                "template_tkeasn7",
+                contactForm
+            )
+            .then(function () {
 
-    setTimeout(function () {
-      submitButton.innerHTML = originalContent;
-      submitButton.style.background = "";
-      submitButton.style.color = "";
-      contactForm.reset();
-    }, 3000);
-  });
+                submitButton.innerHTML =
+                    '<span>تم إرسال طلبك بنجاح</span><i class="fa-solid fa-check mx-2"></i>';
+
+                submitButton.style.background = "var(--gold)";
+                submitButton.style.color = "var(--purple-dark)";
+
+                contactForm.reset();
+
+                setTimeout(function () {
+                    submitButton.innerHTML = originalContent;
+                    submitButton.style.background = "";
+                    submitButton.style.color = "";
+                    submitButton.disabled = false;
+                }, 3000);
+
+            })
+            .catch(function (error) {
+
+                console.error("EmailJS Error:", error);
+
+                submitButton.innerHTML =
+                    '<span>حدث خطأ، حاول مرة أخرى</span><i class="fa-solid fa-xmark mx-2"></i>';
+
+                submitButton.style.background = "#dc3545";
+                submitButton.style.color = "#fff";
+
+                setTimeout(function () {
+                    submitButton.innerHTML = originalContent;
+                    submitButton.style.background = "";
+                    submitButton.style.color = "";
+                    submitButton.disabled = false;
+                }, 3000);
+            });
+    });
 }
-
 const blogRevealCards = document.querySelectorAll(
   ".bailsan-blog-featured, .bailsan-blog-card"
 );
