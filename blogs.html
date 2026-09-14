@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>مجمع بيلسان الطبي</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/blogs.css" />
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="container-fluid px-lg-5">
+      <div class="top-bar-content">
+        <div class="offer-text">
+          احجز موعدك الآن واستمتع بأفضل خدماتنا الطبية
+        </div>
+
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="X">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-navbar">
+    <div class="container-fluid px-lg-5">
+      <div class="navbar-inner">
+        <a href="/" class="logo">
+          <img src="images/logo.jpg" alt="مجمع بيلسان الطبي" />
+        </a>
+
+        <div class="nav-links">
+          <a href="/" class="active"> الرئيسية </a>
+
+          <a href="/#about"> عن المجمع </a>
+
+          <a href="/#departments"> الأقسام </a>
+
+          <a href="doctors.html"> الأطباء </a>
+          <a href="works.html">
+            أعمالنا
+          </a>
+
+          <a href="#blogs"> المدونة </a>
+
+          <a href="/#contact"> تواصل معنا </a>
+        </div>
+
+        <a href="/#contact" class="appointment-btn">
+          <span> احجز موعدك </span>
+
+          <i class="fas fa-arrow-left"></i>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <aside class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <a href="/" class="sidebar-logo">
+        <img src="images/logo.jpg" alt="مجمع بيلسان الطبي" />
+      </a>
+    </div>
+
+    <nav class="sidebar-navigation">
+      <a href="/" class="sidebar-link active">
+        <span class="sidebar-icon">
+          <i class="fas fa-house"></i>
+        </span>
+
+        <span class="sidebar-text"> الرئيسية </span>
+      </a>
+
+      <a href="/#about" class="sidebar-link">
+        <span class="sidebar-icon">
+          <i class="fas fa-hospital"></i>
+        </span>
+
+        <span class="sidebar-text"> عن المجمع </span>
+      </a>
+
+      <a href="/#departments" class="sidebar-link">
+        <span class="sidebar-icon">
+          <i class="fas fa-stethoscope"></i>
+        </span>
+
+        <span class="sidebar-text"> الأقسام </span>
+      </a>
+
+      <a href="doctors.html" class="sidebar-link">
+        <span class="sidebar-icon">
+          <i class="fas fa-user-doctor"></i>
+        </span>
+
+        <span class="sidebar-text"> الأطباء </span>
+      </a>
+      <a href="works.html" class="sidebar-link">
+
+        <span class="sidebar-icon">
+
+          <i class="fas fa-briefcase"></i>
+        </span>
+
+        <span class="sidebar-text">
+          أعمالنا
+        </span>
+
+      </a>
+
+      <a href="#blogs" class="sidebar-link">
+        <span class="sidebar-icon">
+          <i class="fas fa-newspaper"></i>
+        </span>
+
+        <span class="sidebar-text"> المدونة </span>
+      </a>
+
+      <a href="/#contact" class="sidebar-link">
+        <span class="sidebar-icon">
+          <i class="fas fa-phone"></i>
+        </span>
+
+        <span class="sidebar-text"> تواصل معنا </span>
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="/#contact" class="sidebar-appointment">
+        <span class="sidebar-icon">
+          <i class="fas fa-calendar-check"></i>
+        </span>
+
+        <span class="sidebar-text"> احجز موعدك </span>
+      </a>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-social">
+        <a href="#" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <section class="blog-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">مدونة بيلسان</div>
+        <h1>
+          صحتك وجمالك<br />
+          يبدأان بالمعرفة
+        </h1>
+        <p>
+          اكتشفي نصائح طبية موثوقة ومعلومات مفيدة من فريق بيلسان لمساعدتك على
+          الاهتمام بصحتك وجمالك بثقة.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="featured">
+    <div class="container">
+      <div class="featured-card">
+        <div class="featured-image">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=85"
+            alt="العناية بالأسنان" />
+        </div>
+        <div class="featured-content">
+          <div class="article-category">صحة الأسنان</div>
+          <h2>كيف تحافظين على صحة أسنانك وابتسامتك؟</h2>
+          <p>
+            تعرفي على أهم العادات اليومية التي تساعدك على الحفاظ على أسنان
+            صحية وابتسامة جميلة لفترة أطول.
+          </p>
+          <div class="article-meta">15 سبتمبر 2026 · 5 دقائق للقراءة</div>
+          <a href="blog-detail.html" class="read-btn"> قراءة المقال <span>←</span> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blogs" id="blogs">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">اكتشفي المزيد</div>
+        <h2>أحدث مقالاتنا</h2>
+        <p>محتوى طبي مبسط يساعدك على اتخاذ قرارات أفضل لصحتك وجمالك.</p>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="searchInput" placeholder="ابحثي في المقالات..." />
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">الكل</button>
+        <button class="filter-btn" data-category="dental">الأسنان</button>
+        <button class="filter-btn" data-category="derma">الجلدية</button>
+        <button class="filter-btn" data-category="laser">الليزر</button>
+      </div>
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card" data-category="dental" data-title="أهمية تنظيف الأسنان بطريقة صحيحة">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80"
+              alt="تنظيف الأسنان" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الأسنان</div>
+            <h3>أهمية تنظيف الأسنان بطريقة صحيحة</h3>
+            <p>
+              خطوات بسيطة تساعدك على الحفاظ على صحة أسنانك وتقليل مشاكل اللثة
+              والتسوس.
+            </p>
+            <div class="card-bottom">
+              <span class="date">10 سبتمبر 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card" data-category="dental" data-title="متى تحتاجين إلى تقويم الأسنان؟">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa1fc?auto=format&fit=crop&w=900&q=80"
+              alt="تقويم الأسنان" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الأسنان</div>
+            <h3>متى تحتاجين إلى تقويم الأسنان؟</h3>
+            <p>
+              تعرفي على الحالات التي قد تستفيد من تقويم الأسنان وكيف يمكن
+              للطبيب تحديد العلاج المناسب.
+            </p>
+            <div class="card-bottom">
+              <span class="date">7 سبتمبر 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card" data-category="derma" data-title="روتين بسيط لبشرة صحية">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+              alt="العناية بالبشرة" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الجلدية</div>
+            <h3>روتين بسيط لبشرة صحية ومشرقة</h3>
+            <p>
+              خطوات أساسية يمكنك إضافتها إلى روتينك اليومي للعناية بالبشرة
+              والحفاظ على نضارتها.
+            </p>
+            <div class="card-bottom">
+              <span class="date">4 سبتمبر 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card" data-category="laser" data-title="كل ما تحتاجين معرفته عن إزالة الشعر بالليزر">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80"
+              alt="الليزر" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الليزر</div>
+            <h3>كل ما تحتاجين معرفته عن إزالة الشعر بالليزر</h3>
+            <p>
+              تعرفي على كيفية عمل جلسات الليزر وما الذي يمكنك توقعه قبل وأثناء
+              وبعد الجلسة.
+            </p>
+            <div class="card-bottom">
+              <span class="date">1 سبتمبر 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card" data-category="derma" data-title="كيف تختارين واقي الشمس المناسب؟">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=80"
+              alt="واقي الشمس" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الجلدية</div>
+            <h3>كيف تختارين واقي الشمس المناسب لبشرتك؟</h3>
+            <p>
+              دليل مبسط لفهم أنواع واقيات الشمس واختيار المنتج المناسب
+              لاحتياجات بشرتك.
+            </p>
+            <div class="card-bottom">
+              <span class="date">28 أغسطس 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-card" data-category="laser" data-title="نصائح مهمة قبل جلسة الليزر">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80"
+              alt="جلسة الليزر" />
+          </div>
+          <div class="blog-content">
+            <div class="article-category">الليزر</div>
+            <h3>نصائح مهمة قبل جلسة الليزر</h3>
+            <p>
+              تعرفي على أهم التعليمات التي تساعدك على الاستعداد لجلسة الليزر
+              والعناية بالبشرة بعدها.
+            </p>
+            <div class="card-bottom">
+              <span class="date">24 أغسطس 2026</span>
+              <a href="blog-detail.html" class="small-read">اقرأ المزيد ←</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="no-results" id="noResults">
+        <h3>لم نجد مقالات مطابقة</h3>
+        <p>جربي البحث باستخدام كلمات أخرى.</p>
+      </div>
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">→</button>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>جاهزة لخطوتك القادمة؟</h2>
+        <p>
+          فريق بيلسان هنا لمساعدتك في اختيار الخدمة المناسبة لاحتياجاتك الصحية
+          والجمالية.
+        </p>
+        <a href="/#contact" class="cta-btn"> احجزي موعدك الآن </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bailsan-footer">
+    <div class="bailsan-footer-shape bailsan-footer-shape-one"></div>
+    <div class="bailsan-footer-shape bailsan-footer-shape-two"></div>
+
+    <div class="container">
+      <div class="bailsan-footer-cta">
+        <div>
+          <span class="bailsan-footer-label"> ابدأ رحلتك مع بيلسان </span>
+
+          <h2>
+            عناية تبدأ
+            <em>باهتمام</em>
+          </h2>
+
+          <p>
+            نحن هنا لنمنحك تجربة طبية مختلفة، تجمع بين الخبرة والراحة
+            والاهتمام بك.
+          </p>
+        </div>
+
+        <a href="/#contact" class="bailsan-footer-cta-btn">
+          احجز استشارتك
+          <span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="bailsan-footer-main">
+        <div class="bailsan-footer-brand">
+          <a href="/#" class="bailsan-footer-logo"> بيلسان </a>
+
+          <p>
+            مجمع بيلسان الطبي للعناية بالأسنان والجلدية والليزر، حيث نضع راحتك
+            واحتياجك في مقدمة كل تجربة.
+          </p>
+
+          <div class="bailsan-footer-social">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#" aria-label="Snapchat">
+              <i class="fa-brands fa-snapchat"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bailsan-footer-column">
+          <h3>روابط سريعة</h3>
+
+          <ul>
+            <li>
+              <a href="/#about">من نحن</a>
+            </li>
+
+            <li>
+              <a href="/#departments">أقسامنا</a>
+            </li>
+
+            <li>
+              <a href="doctors.html">فريقنا الطبي</a>
+            </li>
+            <li>
+              <a href="works.html">أعمالنا</a>
+            </li>
+            <li>
+              <a href="/#offers">عروض بيلسان</a>
+            </li>
+
+            <li>
+              <a href="/#faq">الأسئلة الشائعة</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bailsan-footer-column">
+          <h3>أقسامنا</h3>
+
+          <ul>
+            <li>
+              <a href="/#departments">الأسنان</a>
+            </li>
+
+            <li>
+              <a href="/#departments">الجلدية</a>
+            </li>
+
+            <li>
+              <a href="/#departments">الليزر</a>
+            </li>
+
+            <li>
+              <a href="/#contact">احجز موعدك</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bailsan-footer-column bailsan-footer-contact">
+          <h3>تواصل معنا</h3>
+
+               <div class="bailsan-footer-contact-item">
+
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <div>
+                            <small>الهاتف</small>
+                            <a href="tel:0553331103" class="phone">0553331103</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bailsan-footer-contact-item">
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+
+                        <div>
+                            <small>واتساب</small>
+                            <strong> <a href="https://wa.me/966553331103" class="phone" target="_blank">0553331103</a>
+                            </strong>
+                        </div>
+
+                    </div>
+        </div>
+      </div>
+
+      <div class="bailsan-footer-bottom">
+        <p>© 2026 بيلسان. جميع الحقوق محفوظة.</p>
+
+        <p class="bailsan-footer-made">
+          صُنع بعناية <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/966553331103" class="bailsan-whatsapp-float" target="_blank" aria-label="WhatsApp"> <i class="fa-brands fa-whatsapp"></i> </a> <button class="bailsan-back-to-top" id="bailsanBackToTop" aria-label="Back to Top"> <i class="fa-solid fa-arrow-up"></i> </button>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
